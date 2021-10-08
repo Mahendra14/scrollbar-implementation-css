@@ -197,3 +197,7 @@ article > *:not(img) {
     scrollbar-width: thin;
   }
 }
+
+
+/* things to avoid:
+make sure to have high enough contrast ratio */
