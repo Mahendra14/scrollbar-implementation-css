@@ -162,6 +162,7 @@ article > *:not(img) {
 
 
 ::-webkit-scrollbar{
+  /*width is only for the horizontal scroll bar similarly if we set height its only for the vertical scroll bar  */
   width: 1em;
 }
 
