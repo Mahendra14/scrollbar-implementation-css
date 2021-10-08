@@ -184,3 +184,16 @@ article > *:not(img) {
 ::-webkit-scrollbar-thumb:hover{
   background: hsl(120 100% 10% / 1);
 }
+
+
+/*cool fact if we just do :hover then whatever u hover on in the page does take and apply those props */
+/* support to firefox and all :-( sadly not a lot of customisations*/
+
+@supports (scrollbar-color: red blue ){
+  *{
+    /* first one is foreground color next is the bg one always needs to be given two */
+    scrollbar-color: hsl(120 100% 20% / 1)  hsl(120 75% 50% / 1);
+    /* we have only three values for this option: auto none and thin */
+    scrollbar-width: thin;
+  }
+}
