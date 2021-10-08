@@ -153,3 +153,26 @@ article > *:not(img) {
   border: 0.5em solid hsl(0 0% 60%);
   padding: 1em;
 }
+
+
+/* scrollbar functionality implementation */
+
+::-webkit-scrollbar{
+  width: 1em;
+}
+
+::-webkit-scrollbar-track{
+  background: hsl(120 75% 50% / 1);
+  border-radius: 100vw;
+  margin-block: .5em;
+  /* margin-left margin-right doesnt work here */
+}
+
+::-webkit-scrollbar-thumb{
+  background: hsl(120 100% 20% / 1);
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: hsl(120 100% 10% / 1);
+}
