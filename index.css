@@ -86,7 +86,7 @@ article {
 
 
 article > *:not(img) {
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 .lead {
@@ -157,6 +157,10 @@ article > *:not(img) {
 
 /* scrollbar functionality implementation */
 
+/* by default these are targeting all the scroll bars*/
+/*Here to give only the main scroll bar mention body::-webkit-scrollbar  or class-Name::-webkit-scrollbar*/
+
+
 ::-webkit-scrollbar{
   width: 1em;
 }
@@ -164,12 +168,15 @@ article > *:not(img) {
 ::-webkit-scrollbar-track{
   background: hsl(120 75% 50% / 1);
   border-radius: 100vw;
+  /*  margin-block gives a little space at above and below for the margin to start a small gap kinda */
   margin-block: .5em;
-  /* margin-left margin-right doesnt work here */
+  /* margin-left margin-right doesnt work here  note: margin-inline is like doing both margin-left and margin-right*/
 }
 
 ::-webkit-scrollbar-thumb{
   background: hsl(120 100% 20% / 1);
+  /* making use of same bg color to make it look like its fitting into that space */
+  border: 0.25em solid hsl(120 75% 50% / 1);
   border-radius: 100vw;
 }
 
